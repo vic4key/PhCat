@@ -11,7 +11,9 @@
 
 enum ePhCatMenu : ULONG
 {
-  ID_ABOUT = 1000
+  ID_ABOUT = 1000,
+  ID_TOTAL_RESOURCES,
+  ID_TOTAL_RESOURCES_RECURSIVE
 };
 
 /* Declare Function Callback */
