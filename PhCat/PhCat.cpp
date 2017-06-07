@@ -141,12 +141,12 @@ void PhCatUpdateMenuContext(const PPH_PLUGIN_MENU_INFORMATION pMenuInfo, const P
 
 VOID NTAPI CbPluginCallbackLoad(_In_opt_ PVOID pParameter, _In_opt_ PVOID pContext)
 {
-  ce::ceMsgA(__FUNCSIG__);
+  ce::ceMsgA(CE_FUNCTION_NAME);
 }
 
 VOID NTAPI CbPluginCallbackMenuItem(_In_opt_ PVOID pParameter, _In_opt_ PVOID pContext)
 {
-  ce::ceMsgA(__FUNCSIG__);
+  ce::ceMsgA(CE_FUNCTION_NAME);
 
   auto pMenuItem = static_cast<PPH_PLUGIN_MENU_ITEM>(pParameter);
   if (pMenuItem == nullptr) {
@@ -180,12 +180,12 @@ VOID NTAPI CbPluginCallbackMenuItem(_In_opt_ PVOID pParameter, _In_opt_ PVOID pC
 
 VOID NTAPI CbGeneralCallbackMainWindowShowing(__in_opt PVOID pParameter, __in_opt PVOID pContext)
 {
-  ce::ceMsgA(__FUNCSIG__);
+  ce::ceMsgA(CE_FUNCTION_NAME);
 }
 
 VOID NTAPI CbGeneralCallbackProcessMenuInitializing(_In_opt_ PVOID pParameter, _In_opt_ PVOID pContext)
 {
-  ce::ceMsgA(__FUNCSIG__);
+  ce::ceMsgA(CE_FUNCTION_NAME);
 
   auto pMenuInfo = static_cast<PPH_PLUGIN_MENU_INFORMATION>(pParameter);
   if (pMenuInfo == nullptr)
